@@ -26,3 +26,27 @@ function cube(x){
 
 result = arr.map(x=>cube(x));
 console.log(result);
+
+// Implementation of filter
+
+// Implementation of map using arrow functions
+console.log(arr.filter(x => x > 5 ));
+
+result = arr.filter((x) => {
+    return x < 5;
+})
+console.log(result);
+
+// Implementation of filter using anonymous function
+result = arr.filter(function(x){
+    return x%2==0;
+})
+console.log(result);
+
+// Implementation of map using function
+function checkOddNumber(x){
+    return x%2 != 0;
+}
+
+result = arr.filter(x => checkOddNumber(x));
+console.log(result);
