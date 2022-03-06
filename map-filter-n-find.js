@@ -50,3 +50,7 @@ function checkOddNumber(x){
 
 result = arr.filter(x => checkOddNumber(x));
 console.log(result);
+
+// Find is also a filter type function
+// But it returns the first result that matches the condition
+console.log(arr.find(x=> x >=10))
